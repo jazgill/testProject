@@ -27,6 +27,33 @@ function show(){
 
 show();
 
-console.log(functionVar);    //Throws ReferenceError
-console.log(functionLet);    //Throws ReferenceError
-console.log(functionConst);    //Throws ReferenceError
+//console.log(functionVar);    //Throws ReferenceError
+//console.log(functionLet);    //Throws ReferenceError
+//console.log(functionConst);    //Throws ReferenceError
+
+//Re-assignement and re-declaration
+
+{
+    var blockVarInit = "I'm a block-scoped initial var";
+    let blockLetInit = "I'm a block-scoped initial let";
+    const blockConstInit = "I'm a block-scoped initial const";
+
+    console.log(blockVarInit);    
+    console.log(blockLetInit);    
+    console.log(blockConstInit); 
+
+    var blockVarInit = "Now, I'm block-scoped, 2nd var value";
+    blockLetInit = "Now, I'm block-scoped, 2nd let value";
+    //blockConstInit = "Now, I'm block-scoped, 2nd const value";
+
+    console.log(blockVarInit);    
+    console.log(blockLetInit);    
+    //console.log(blockConstInit);    
+}
+    var blockVarInit = "Now, I'm outside block, 2nd var value";
+    let blockLetInit = "Now, I'm outside block, 2nd let value";
+    blockConstInit = "Now, I'm outside block, 2nd const value";
+
+    console.log(blockVarInit);    
+    console.log(blockLetInit);    
+    console.log(blockConstInit);    
