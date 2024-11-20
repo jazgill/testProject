@@ -44,7 +44,7 @@ show();
 
     var blockVarInit = "Now, I'm block-scoped, 2nd var value";
     blockLetInit = "Now, I'm block-scoped, 2nd let value";
-    //blockConstInit = "Now, I'm block-scoped, 2nd const value";
+    //pblockConstInit = "Now, I'm block-scoped, 2nd const value";
 
     console.log(blockVarInit);    
     console.log(blockLetInit);    
