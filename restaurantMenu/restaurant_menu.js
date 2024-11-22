@@ -16,3 +16,10 @@ for (let i = 0; i < dessertMenu.length; i++){
     dessertItem += `<p>Item ${i + 1}: ${dessertMenu[i]}</p>`;
 }
 document.getElementById('dessertMenuItems').innerHTML = dessertItem;
+
+//test reduce function
+const orderPrices = [50, 30, 25, 40, 15];
+
+const totalOrderValue = orderPrices.reduce((total, price) => total + price, 0)
+
+console.log('The total value of the order is ', totalOrderValue);
