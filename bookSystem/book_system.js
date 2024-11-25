@@ -39,11 +39,10 @@ function clearInputs(){
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';
 }
-function deleteBook(indexOfBooks){
+function deleteBook(indexToDelete){
    //let index = books.length-1;
    //books.splice(index, 1);
-   books = books.filter((_, index) => index !== indexOfBooks);
-   console.log(indexOfBooks);
+   books = books.filter((currentValue, index) => index !== indexToDelete);
    console.log(books);
    showBooks();
 }
