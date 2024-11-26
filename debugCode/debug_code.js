@@ -6,9 +6,13 @@ function performOperation(){
     //check if inputs are valid numbers
     if(!isNaN(num1) && !isNaN(num2)) {
         //Perform the operation
-        let result = multiply(num1, num2);
+        let result1 = multiply(num1, num2);
+        let result2 = addition(num1, num2);
+        let result3 = division(num1, num2);
         //display the result
-        displayResult(result);
+        displayResult(result1);
+        displayResult(result2);
+        displayResult(result3);
     } else {
         displayResult('Please enter valid numbers');
     }
@@ -20,6 +24,16 @@ function multiply(a, b) {
 
     //multiply the numbers
     return a * b;
+}
+
+function addition(a, b){
+    debugger;
+    return a + b;
+}
+
+function division(a, b){
+    debugger;
+    return Math.floor(a / b);
 }
 
 function displayResult(result){
