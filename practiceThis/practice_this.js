@@ -83,8 +83,18 @@ Whenever you create a new object using the new keyword, 'this' referres to the o
 function User(name) {
     this.name = name;
     console.log(this);
-} 
-const devsage = new User("DevSage");
+}
+/* 
+{
+    "name": "DevSage"
+}
+*/ 
+const devsage = new User("DevSage");  
+ /*
+ {
+    "name": "CoddingPhase"
+ }
+*/
 const codingPhase = new User("CoddingPhase");
 
 
